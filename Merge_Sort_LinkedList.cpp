@@ -47,7 +47,7 @@ void partition(struct node *head, struct node** frontref, struct node** backref)
 		slow = head;
 		fast = head->next;
 		
-		if(fast != NULL)
+		while(fast != NULL)
 		{
 			fast = fast->next;
 			
